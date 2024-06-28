@@ -1,0 +1,142 @@
+.buttons-group-blog {
+  @extend .buttons-group;
+}
+
+.blog-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  h3 {
+    font-family: 'Archivo';
+    font-size: 40px;
+    font-weight: 700;
+    color: #030407;
+  }
+}
+
+.blog-carousel {
+  height: 511px;
+}
+
+.blog-slider-mask {
+  display: flex;
+  gap: 24px;
+  animation: carousel 10s infinite linear;
+  &:hover {
+    animation-play-state: paused;
+  }
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.blog-list-item {
+  width: 390px;
+  height: 511px;
+  border: 1px solid #ebebef;
+  padding: 9px;
+}
+
+.blog-card {
+  width: 372px;
+  height: 220px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  h5 {
+    font-family: 'Archivo';
+    font-size: 20px;
+    font-weight: 700;
+    color: #030407;
+  }
+  a {
+    height: 45px;
+    width: 324px;
+    gap: 8px;
+    background-color: #f9f9fb;
+    display: flex;
+    justify-content: center;
+    span {
+      font-family: 'Inter';
+      font-size: 15px;
+      font-weight: 500;
+      color: #24262d;
+      align-self: center;
+    }
+    img {
+      width: 12px;
+      height: 12px;
+      align-self: center;
+    }
+  }
+}
+
+.blog-category {
+  padding: 6px 12px;
+  width: 94px;
+  height: 29px;
+  box-sizing: border-box;
+  background: #f3f3fc;
+  p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    color: #443fde;
+  }
+}
+
+.blog-data {
+  display: flex;
+  gap: 8px;
+  height: 25px;
+  div {
+    width: 4px;
+    height: 4px;
+    background-color: #606476;
+    border-radius: 45%;
+    align-self: center;
+  }
+  p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #606476;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-blog{
+    .blog-title {
+      flex-direction: column;
+      height: 170px;
+    }
+  }
+  .blog-slider-mask {
+    animation: mobile-carousel 10s infinite linear;
+    &:hover {
+      animation-play-state: paused;
+    }
+    @keyframes mobile-carousel {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-500%);
+      }
+    }
+  }
+}

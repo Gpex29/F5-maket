@@ -1,0 +1,20 @@
+- const logos = [{ src: './img/sectionHeader/openTable.png', alt: 'OpenTable' }, { src: './img/sectionHeader/hubSpot.png', alt: 'HubSpot' }, { src: './img/sectionHeader/amazon.png', alt: 'Amazon' }, { src: './img/sectionHeader/shopify.png', alt: 'Shopify' }, { src: './img/sectionHeader/slack.png', alt: 'Slack' }, { src: './img/sectionHeader/dropbox.png', alt: 'Dropbox' }]
+
+section(id='company').header
+  div.container-header
+    div.header-top-layout
+      div.left-layout
+        p <span>NEW</span> Stay connected to get upcoming jobs
+        h1 Find the most <br> exciting jobs in tech
+      div.right-layout
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi<br>rhoncus, pharetra leo et. Sign in or sign up to get started!
+    div.header-middle-layout
+      form
+        input(type="search" placeholder=`Search...`)
+        button Search
+      picture 
+        img(src='./img/sectionHeader/background.png' alt='high-rise building')
+    div.header-bottom-layout
+      each logo in logos
+        picture
+            img(src=logo.src, alt=logo.alt)

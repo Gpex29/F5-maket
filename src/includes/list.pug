@@ -1,0 +1,84 @@
+- const jobListData = [
+-   {
+-     icon: 'dribble.png',
+-     company: 'Dribble',
+-     date: 'October 25, 2022',
+-     title: 'Front End Developer',
+-     category: 'Marketing',
+-     type: 'Part Time',
+-     location: 'San Antonio',
+-     salary: '$ 130k-160k'
+-   },
+-   {
+-     icon: 'dribble.png',
+-     company: 'Dribble',
+-     date: 'October 25, 2022',
+-     title: 'Backend Developer',
+-     category: 'Design',
+-     type: 'Full Time',
+-     location: 'Dallas',
+-     salary: '$ 50k-70k'
+-   },
+-   {
+-     icon: '',
+-     company: 'Tokopedia',
+-     date: 'March 30, 2021',
+-     title: 'Scrum Master',
+-     category: 'Marketing',
+-     type: 'Part Time',
+-     location: 'San Antonio',
+-     salary: '$ 130k-160k'
+-   },
+-   {
+-     icon: 'facebook.png',
+-     company: 'Facebook',
+-     date: 'March 30, 2021',
+-     title: 'Lead Technical Architect',
+-     category: 'Technology',
+-     type: 'Full Time',
+-     location: 'Melbourne',
+-     salary: '$ 210k-240k'
+-   },
+-   {
+-     icon: 'spotify.png',
+-     company: 'Spotify',
+-     date: 'March 30, 2021',
+-     title: 'Digital Media Strategist',
+-     category: 'Business',
+-     type: 'Casual',
+-     location: 'New York',
+-     salary: '$ 50k-70k'
+-   },
+-   {
+-     icon: 'paypal.png',
+-     company: 'Paypal',
+-     date: 'March 30, 2021',
+-     title: 'Systems Administrator',
+-     category: 'Business',
+-     type: 'Casual',
+-     location: 'California',
+-     salary: '$ 40k-50k'
+-   }
+- ]
+div.list
+  each job in jobListData
+    div.list-item
+      div.list-item-header
+        div.icon-layout 
+          if job.icon
+            picture
+              img.icon(src=`img/section1/${job.icon}`, alt=job.company)
+        div.list-item-header-title
+          div= job.company
+          div.inter.fs14.fw400.text-gray= job.date
+      h6.list-item-h6.archivo.fs18.fw700= job.title
+      div.list-item-job-tags
+        div.job-category= job.category
+        div.job-tags= job.type
+      div.list-item-job-details
+        picture
+            img.list-item-job-details-img(src="./img/section1/location.png", alt="location")
+        p.list-item-job-details-text= job.location
+        picture
+            img.list-item-job-details-img(src="./img/section1/money.png", alt="money")
+        p.list-item-job-details-text= job.salary

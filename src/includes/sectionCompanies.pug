@@ -1,0 +1,27 @@
+- const companies = [{name: 'Dribble', paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', employees: 65}, {name: 'Paypal', paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', employees: 6000}, {name: 'Spotify', paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', employees: 2000}, {name: 'Slack', paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', employees: 400}]
+section.section-companies 
+  div.container-companies
+    div.companies-header
+      div.companies-title-wrapper
+        h3 Work with exciting companies
+        p Discover more than 1,600 open positions
+      div.buttons-group-companies
+        div
+          button.prev-btn
+            img(src=`../img/buttons/previous.png`)
+        div
+          button.next-btn
+            img(src=`../img/buttons/next.png`)
+    div.region-carousel
+      div.slider-mask
+        each company, index in companies
+          div.carousel-list-item(class=`item-${index}`)
+            div.company-card-header
+              div.icon-wrap-regular
+                picture 
+                  img(src=`../img/sectionCompanies/${company.name.toLowerCase()}.png`)
+              h6= company.name
+            p= company.paragraph
+            div.company-card-employees
+              div= company.employees
+              div employees

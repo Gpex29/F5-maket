@@ -1,0 +1,158 @@
+.companies-header {
+  height: 80px;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies-title-wrapper {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 7.3px;
+  justify-content: space-between;
+  h3 {
+    font-family: 'Archivo';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    color: #030407;
+  }
+  p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #606476;
+  }
+}
+
+.buttons-group-companies {
+  @extend .buttons-group;
+  align-self: flex-end;
+}
+
+.region-carousel {
+  height: 310px;
+}
+
+.slider-mask {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  animation: carousel 10s infinite linear;
+  &:hover {
+    animation-play-state: paused;
+  }
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.carousel-list-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-width: 390px;
+  height: 310px;
+  border: 1px solid #ebebef;
+  padding: 41px;
+  gap: 24px;
+  &:hover {
+    animation-play-state: paused;
+  }
+  p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color: #3e404c;
+  }
+}
+
+.company-card-header {
+  display: flex;
+  width: 133px;
+  height: 56px;
+  gap: 14px;
+  h6 {
+    font-family: 'Archivo';
+    font-size: 18px;
+    font-weight: 700;
+    color: #030407;
+    box-sizing: border-box;
+    align-self: center;
+  }
+}
+
+.icon-wrap-regular {
+  box-sizing: border-box;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ebebef;
+  padding: 12px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.company-card-employees {
+  display: flex;
+  padding: 10px 15px;
+  gap: 4px;
+  background: #f1f8f4;
+  div {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: #246b49;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .companies-header {
+    flex-direction: column;
+    width: 338px;
+    height: 228px;
+    gap: 7px;
+    .companies-title-wrapper {
+      height: 128px;
+    }
+    h3 {
+      height: 97px;
+      white-space: wrap;
+    }
+    .buttons-group-companies {
+      align-self: flex-start;
+    }
+  }
+  .region-carousel {
+    width: 100%;
+    height: 292px;
+    .slider-mask {
+      gap: 0;
+      animation: carousel-mobile 10s infinite linear;
+      &:hover {
+        animation-play-state: paused;
+      }
+      @keyframes carousel-mobile {
+        0% {
+          transform: translateX(+100%);
+        }
+        100% {
+          transform: translateX(-500%);
+        }
+      }
+    }
+  }
+
+  .carousel-list-item {
+    width: 292px;
+    height: 292px;
+  }
+}

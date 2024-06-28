@@ -1,0 +1,137 @@
+.photo-wrap {
+  width: 518px;
+  height: 589px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  div {
+    width: 366px;
+    height: 49px;
+    background-color: #f8f8fa;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    line-height: 49px;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    color: #3e404c;
+  }
+}
+
+.section-2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-evenly;
+  padding: 8px 0px;
+  width: 519px;
+  h3 {
+    font-family: 'Archivo';
+    font-size: 40px;
+    font-weight: 700;
+    color: #030407;
+    letter-spacing: -0.8px;
+    align-self: center;
+    height: 96px;
+    box-sizing: border-box;
+  }
+}
+
+.section-2-content-paragraph {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  color: #3e404c;
+  align-self: center;
+  height: 87px;
+}
+
+.feature-content-layout {
+  height: 293px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.feature-content-block {
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 16px;
+  height: 88px;
+  background-color: #f9f9fb;
+}
+
+.icon-layout {
+  box-sizing: border-box;
+  height: 56px;
+  width: 56px;
+  border: 1px solid #ebebef;
+  background-color: #ffffff;
+  padding: 16px;
+  align-self: center;
+  img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.section-2-block-header {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  color: #030407;
+  padding-top: 8px;
+}
+
+.section-2-block-paragraph {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  color: #606476;
+  padding-top: 8px;
+}
+
+.mobile-detail {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .photo-wrap {
+    display: none;
+  }
+  .mobile-detail {
+    display: block;
+    width: 338px;
+    height: 26px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #443fde;
+  }
+  .section-2-content {
+    height: auto;
+    width: 100%;
+    height: 772px;
+    gap: 4px;
+    justify-content: space-between;
+    h3 {
+      height: 193px;
+    }
+  }
+  .section-2-content-paragraph {
+    height: 144px;
+  }
+  .feature-content-layout {
+    height: 359px;
+  }
+  .feature-content-block {
+    height: 110px;
+  }
+}

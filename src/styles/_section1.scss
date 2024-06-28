@@ -1,0 +1,192 @@
+.container-1-title-wrap {
+  display: flex;
+  height: 123px;
+  justify-content: space-between;
+  gap: 16px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  h3 {
+    height: 49px;
+    font-family: 'Archivo';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    color: #030407;
+  }
+  p {
+    height: 58px;
+    width: 535px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #3e404c;
+  }
+  a {
+    display: flex;
+    align-items: flex-end;
+    button {
+      width: 119px;
+      height: 44px;
+      padding: 10px 20px;
+      background-color: #443fde;
+      font-family: 'Inter';
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: #ffffff;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 1140px;
+  height: 557px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 262px;
+  background: white;
+  border: 1px solid #ebebef;
+  padding: 29px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  h6 {
+    margin: 24px 0px;
+    font-family: 'Archivo';
+    font-size: 18px;
+    font-weight: 700;
+    color: #030407;
+  }
+}
+
+.list-item-header {
+  display: flex;
+  gap: 14px;
+  .icon-layout {
+    box-sizing: border-box;
+    height: 56px;
+    width: 56px;
+    padding: 12px;
+    border: 1px solid #ebebef;
+    img {
+      height: 31px;
+      width: 31px;
+    }
+  }
+  .list-item-header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div {
+      height: 29px;
+      font-family: 'Inter';
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.32px;
+      color: #030407;
+    }
+    p {
+      font-family: 'Inter';
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      color: #606476;
+    }
+  }
+}
+
+.list-item-job-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  .job-category {
+    box-sizing: border-box;
+    padding: 6px 12px;
+    color: #443fde;
+    background-color: #F3F3FC;
+  }
+  .job-tags {
+    box-sizing: border-box;
+    padding: 6px 12px;
+    color: #c98b40;
+    background-color: #FEF7F1;
+  }
+}
+
+.list-item-job-details {
+  display: flex;
+  height: 24px;
+  gap: 24px;
+  img {
+    height: 24px;
+    width: 24px;
+  }
+  span {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: #606476;
+    line-height: 24px;
+  }
+  div {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .container-1-title-wrap {
+    width: 338px;
+    height: 276px;
+    flex-direction: column;
+    h3 {
+      width: 338px;
+      height: 97px;
+    }
+    p {
+      width: 338px;
+      height: 87px;
+    }
+    a button {
+      width: 338px;
+    }
+  }
+  .list {
+    width: 338px;
+    height: 1734px;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .list-item {
+    width: 338px;
+    h6 {
+      margin: 12px 0px;
+    }
+  }
+  .list-item-job-tags {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .list-item-job-details {
+    flex-direction: column;
+    gap: 0;
+  }
+}

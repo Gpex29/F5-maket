@@ -1,0 +1,29 @@
+- const blogs = [{category: 'Resources', text: 'Finding employees in the gig economy', data: 'October 24, 2022'}, {category: 'Education', text: 'How to make a great first impression everytime', data: 'October 24, 2022'}, {category: 'Trends', text: 'Find out the best paying careers in 2022', data: 'October 24, 2022'}, {category: 'Careers', text: 'Ten things to nail your next job Interview', data: 'March 24, 2021'}]
+section(id='blog').blog-section
+  div.container-blog
+    div.blog-title
+      h3 Get the latest news about jobs!
+      div.buttons-group
+        div
+          button
+            img.button-img(src=`./img/buttons/previous.png`)
+        div
+          button
+            img.button-img(src=`./img/buttons/next.png`)
+    div.blog-carousel
+      div.blog-slider-mask
+        each blog in blogs
+          div.blog-list-item
+            div.blog-card
+              picture 
+                img(src=`../img/blog/${blog.category.toLowerCase()}.png`)
+            div.blog-text
+              div.blog-category
+                p= blog.category
+              h5= blog.text
+              div.blog-data
+                div 
+                p= blog.data
+              a 
+                span Read More 
+                img(src=`./img/buttons/next.png`)
