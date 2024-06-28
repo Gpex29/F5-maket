@@ -10,103 +10,50 @@
 .banner {
   @extend .section;
   height: 92px;
-  border-bottom: 1px solid #EBEBEF;
-}
-@media screen and (max-width: 375px){
-  .banner {
-    padding: 24px 12px;
-  }
+  border-bottom: 1px solid #ebebef;
 }
 
 .header {
   @extend .section;
   height: 1110px;
 }
-@media screen and (max-width: 375px){
-  .header {
-    padding: 64px 16px;
-    height: 1265px;
-  }
-}
 
 .section-1 {
   @extend .section;
   height: 865px;
-  background: #F9F9FB;
-}
-@media screen and (max-width: 375px){
-  .section-1 {
-    padding: 32px 16px;
-    height: 2132px;
-  }
+  background: #f9f9fb;
 }
 
 .section-companies {
   @extend .section;
   height: 576px;
 }
-@media screen and (max-width: 375px){
-  .section-companies {
-    padding: 32px 16px;
-    height: 586px;
-  }
-}
 
 .section-2 {
   @extend .section;
   height: 720px;
 }
-@media screen and (max-width: 375px){
-  .section-2 {
-    padding: 32px 16px;
-    height: 862px;
-  }
-}
 
 .section-3 {
   @extend .section;
   height: 746px;
-  background: #F9F9FB;
-}
-@media screen and (max-width: 375px){
-  .section-3 {
-    padding: 32px 16px;
-    height: 677px;
-  }
+  background: #f9f9fb;
 }
 
 .blog-section {
   @extend .section;
   height: 744px;
 }
-@media screen and (max-width: 375px){
-  .blog-section {
-    padding: 32px 16px;
-    height: 754px;
-  }
-}
 
 .section-4 {
   @extend .section;
   height: 482px;
 }
-@media screen and (max-width: 375px){
-  .section-4 {
-    padding: 32px 16px;
-    height: 502px;
-  }
-}
 
 .footer {
   @extend .section;
   height: 508px;
-  border-top: 1px solid #EBEBEF;
-}
-@media screen and (max-width: 375px){
-  .footer {
-    padding: 32px 16px;
-    height: 511px;
-  }
+  border-top: 1px solid #ebebef;
 }
 
 .container {
@@ -122,49 +69,21 @@
   flex-direction: row;
   height: 44px;
 }
-@media screen and (max-width: 375px){
-  .container-banner {
-    width: 352.5px;
-    height: 46px;
-    gap: 32px;
-  }
-}
 
 .container-header {
   @extend .container;
   height: 986px;
-}
-@media screen and (max-width: 375px){
-  .container-header {
-    width: 343px;
-    height: 1135px;
-    gap: 32px;
-  }
 }
 
 .container-regular-1 {
   @extend .container;
   height: 738px;
 }
-@media screen and (max-width: 375px){
-  .container-regular-1 {
-    
-    width: 338px;
-    height: 2067px;
-    gap: 58px;
-  }
-}
 
 .container-companies {
   @extend .container;
   gap: 58px;
   height: 738px;
-}
-@media screen and (max-width: 375px){
-  .container-companies {
-    width: 338px;
-    height: 522px;
-  }
 }
 
 .container-regular-2 {
@@ -173,26 +92,12 @@
   height: 590px;
   gap: 104px;
 }
-@media screen and (max-width: 375px){
-  .container-regular-2 {
-    flex-direction: column;
-    width: 338px;
-    height: 798px;
-    gap: 0;
-  }
-}
 
 .container-regular-3 {
   @extend .container;
   height: 618px;
   width: 960px;
   gap: 72px;
-}
-@media screen and (max-width: 375px){
-  .container-regular-3 {
-    width: 338px;
-    height: 613px;
-  }
 }
 
 .container-regular-4 {
@@ -201,24 +106,11 @@
   justify-content: center;
   align-content: center;
 }
-@media screen and (max-width: 375px){
-  .container-regular-4 {
-    width: 338px;
-    height: 690px;
-    gap: 82px;
-  }
-}
 
 .container-blog {
   @extend .container;
   height: 616px;
   gap: 56px;
-}
-@media screen and (max-width: 375px){
-  .container-blog {
-    width: 338px;
-    height: 438px;
-  }
 }
 
 .container-footer {
@@ -226,7 +118,81 @@
   height: 380px;
   gap: 40px;
 }
-@media screen and (max-width: 375px){
+
+@media screen and (max-width: 425px) {
+  .banner {
+    padding: 24px 12px;
+  }
+  .header {
+    padding: 64px 16px;
+    height: 1265px;
+  }
+  .section-1 {
+    padding: 32px 16px;
+    height: 2132px;
+  }
+  .section-companies {
+    padding: 32px 16px;
+    height: 586px;
+  }
+  .section-2 {
+    padding: 32px 16px;
+    height: 862px;
+  }
+  .section-3 {
+    padding: 32px 16px;
+    height: 677px;
+  }
+  .blog-section {
+    padding: 32px 16px;
+    height: 754px;
+  }
+  .section-4 {
+    padding: 32px 16px;
+    height: 502px;
+  }
+  .footer {
+    padding: 32px 16px;
+    height: 511px;
+  }
+  .container-blog {
+    width: 338px;
+    height: 438px;
+  }
+  .container-regular-4 {
+    width: 338px;
+    height: 690px;
+    gap: 82px;
+  }
+  .container-regular-3 {
+    width: 338px;
+    height: 613px;
+  }
+  .container-regular-2 {
+    flex-direction: column;
+    width: 338px;
+    height: 798px;
+    gap: 0;
+  }
+  .container-companies {
+    width: 338px;
+    height: 522px;
+  }
+  .container-regular-1 {
+    width: 338px;
+    height: 2067px;
+    gap: 58px;
+  }
+  .container-header {
+    width: 343px;
+    height: 1135px;
+    gap: 32px;
+  }
+  .container-banner {
+    width: 352.5px;
+    height: 46px;
+    gap: 32px;
+  }
   .container-footer {
     width: 335px;
     height: 447px;
