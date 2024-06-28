@@ -118,8 +118,8 @@
   .companies-header {
     flex-direction: column;
     width: 338px;
-    height: 228px;
-    gap: 7px;
+    height: 150px;
+    gap: 14px;
     .companies-title-wrapper {
       height: 128px;
     }
@@ -133,9 +133,10 @@
   }
   .region-carousel {
     width: 100%;
-    height: 292px;
+    height: 300px;
     .slider-mask {
       gap: 0;
+      height: 100%;
       animation: carousel-mobile 10s infinite linear;
       &:hover {
         animation-play-state: paused;
@@ -148,11 +149,11 @@
           transform: translateX(-500%);
         }
       }
+      .carousel-list-item {
+        width: 292px;
+        height: 300px;
+      }
     }
   }
 
-  .carousel-list-item {
-    width: 292px;
-    height: 292px;
-  }
 }
